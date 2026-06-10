@@ -16,6 +16,32 @@
     <meta property="og:description" content="" />
 
     <link rel="stylesheet" type="text/css" href="/assets/main-1e6c5491e93afd5d88be837ea0ea31ca6d9a6f696a41cf48fda38f589df13a47.css">
+	  <style>
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .photo-grid img {
+      height: auto;
+    }
+  }
+</style>
   </head>
 
   <body>
@@ -202,7 +228,7 @@ Welcome to the website of the WiOpt conference 2026. -->
 	<!-- <p>Accepted papers are available here: <a href="https://drive.google.com/file/d/1cc53FaI1Dc8EKhpsmbLUGK8Jv2K7JH07/view?usp=drive_link">accepted papers</a></p> -->
 <p>Student Travel Grant information is available <a href="https://wiopt2026.github.io/stg.html" target="_blank">HERE</a>.</p>
 
-	<h1 id="photo-gallery" style="text-align:center; margin-top:30px;">
+	<h1 id="photo-gallery" style="margin-top:30px;">
       Photo Gallery
     </h1>
 
