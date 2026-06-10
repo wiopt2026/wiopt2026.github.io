@@ -24,10 +24,23 @@
     margin-bottom: 30px;
   }
 
-  .photo-grid img {
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.photo-grid a {
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.photo-grid img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
   @media screen and (max-width: 768px) {
